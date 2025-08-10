@@ -1,0 +1,58 @@
+//*Entity-Relationship Model – Gym Management System
+
+Gymnasium
+
+ -GymID (PK)
+
+-Name
+
+-Address
+
+-PhoneNumber
+
+//*Session
+
+-SessionID 
+
+-SportType
+
+-Schedule
+
+-MaxCapacity (20)
+
+-GymID 
+
+//*Coach
+
+ -CoachID (PK)
+
+-LastName
+
+-FirstName
+
+-Age
+
+-Specialty
+
+//*Member
+
+-MemberID (PK)
+
+-LastName
+
+-FirstName
+
+-Address
+
+-DateOfBirth
+
+-Gender
+
+**Relationships:
+
+-A Gymnasium has many Sessions (1 → M).
+
+-A Session is led by up to two Coaches (M → M).
+
+-A Member registers for many Sessions, and each Session can have many Members (M → M).(many to many relationship )
+
